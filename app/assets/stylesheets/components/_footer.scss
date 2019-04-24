@@ -1,0 +1,35 @@
+.footer {
+  background: #210069;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
+  padding: 0px 50px;
+  color: white;
+}
+.footer-links {
+  display: flex;
+  align-items: center;
+}
+.footer-links a {
+  color: white;
+  opacity: 0.7;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 0px 10px;
+}
+.footer-links a:hover {
+  opacity: .9;
+}
+.footer .fa-dollar-sign {
+  color: #D23333;
+}
+
+@media (max-width: 1000px) {
+  .footer-copyright {
+    display: none;
+  }
+  .footer-links a {
+  font-size: 10px;
+  }
+}

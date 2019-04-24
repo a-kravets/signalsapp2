@@ -1,1 +1,111 @@
 // Specific CSS for your home-page
+body {
+  background-color: white;
+}
+.section {
+  background-color: #210069;
+  h2 {
+    text-align: center;
+    padding: 1em 1em;
+    color: white;
+    font-size: 3em;
+  }
+  h3 {
+    color: white;
+  }
+  p {
+    font-size: 20px;
+    color: white;
+    opacity: .7;
+  }
+}
+#performance, #who-we-are {
+  background-color: white;
+  margin-bottom: 3em;
+  h2 {
+    text-align: center;
+    padding: 1em 1em;
+    color: black;
+  }
+  h3 {
+    color: black;
+  }
+  p {
+    font-size: 20px;
+    color: black;
+    opacity: .7;
+  }
+}
+
+.fa-user-plus, .fa-envelope-open, .fa-money-check-alt {
+  color: white;
+  margin-bottom: .5em;
+}
+
+#how-it-works {
+  padding: 3em 3em;
+  .row {
+    text-align: center;
+    padding: 3em 3em;
+  }
+}
+
+#we-photo {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+#who-we-are, #reg-form {
+  .row {
+    text-align: center;
+  }
+  h3 {
+    margin-top: 1em;
+    color: black;
+  }
+  p {
+    font-size: 16px;
+    color: black;
+    opacity: .7;
+  }
+}
+
+#reg-form {
+  padding-bottom: 2em;
+}
+
+.center {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 992px) {
+  #chart {
+    width: 390px;
+    height: 390px;
+  }
+}
+
+@media (max-width: 415px) {
+  #chart {
+    width: 350px;
+    height: 350px;
+  }
+  .container h2 {
+    font-size: 28px;
+  }
+  h3 {
+    font-size: 22px;
+  }
+  h4 {
+    font-size: 18px;
+  }
+  #we-photo {
+    width: 150px;
+    height: 150px;
+  }
+}

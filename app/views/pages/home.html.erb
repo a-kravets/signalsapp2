@@ -1,2 +1,128 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+
+<div class='banner slider'>
+    <div class='banner slide1'></div>
+    <div class='banner slide2'></div>
+    <div class='banner slide3'></div>
+
+     <div class="head-container">
+
+    <h1>Trading Signals App</h1>
+    <p>95% of traders fail. Join the top 5%</p>
+
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-sm-4 col-sm-offset-4 col-md-4 offset-md-4">
+
+      <div class="form-login">
+        <%= simple_form_for @trader, url: traders_url, method: :post do |f| %>
+          <%#= f.input :name, label: false, input_html: { class: "form-control form-control-lg", placeholder: "Enter your name" } %>
+          <%#= f.input :phone, label: false, input_html: { class: "form-control form-control-lg", placeholder: "Enter your phone" } %>
+          <%= f.input :email, label: false, input_html: { class: "form-control form-control-lg", placeholder: "Enter your email" } %>
+          <%= f.submit 'Sign Up For Free Trading Signals', class: 'btn btn-danger' %>
+        <% end %>
+      </div>
+
+  </div>
+</div>
+
+</div>
+</div>
+</div>
+
+<div class="section" id="performance">
+  <div class="container">
+    <h2>Signals Performance</h2>
+    <div class="row align-items-center">
+      <div class="col-sm">
+        <h3>Double-Digits Profitability</h3>
+        <p>Our signal alerts are mostly based on pending orders and are sent to you few times a week. The system generates several signals, yet we only send signals which offer at least a 1:1 Risk Reward Ratio. We use stop losses of 30 - 100 pips and have pre-defined take profit levels. Occasionally, a take profit level will be changed to a trailing stop if the market makes a clear break through our target level.</p>
+      </div>
+
+      <div class="col-sm">
+        <%= image_tag "chart.svg", alt: "chart", id: "chart" %>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<div class="section" id="how-it-works">
+  <div class="container">
+    <h2>How It All Works</h2>
+    <div class="row justify-content-between">
+      <div class="col-sm"><i class="fas fa-user-plus fa-4x"></i><p>Sign Up</p></div>
+      <div class="col-sm"><i class="fas fa-envelope-open fa-4x"></i><p>Get Signals</p></div>
+      <div class="col-sm"><i class="fas fa-money-check-alt fa-4x"></i><p>Trade & Profit</p></div>
+    </div>
+  </div>
+</div>
+
+
+<div class="section" id="who-we-are">
+  <div class="container">
+    <h2>Who We Are</h2>
+    <div class="row justify-content-between">
+      <div class="col-sm">
+        <%= image_tag "benjamin_hirsch.jpg", alt: "photo", id: "we-photo" %>
+        <h3>Benjamin Hirsch</h3>
+        <h4>CEO, 59</h4>
+        <p>CEO for 1 year, previous experience of over 30 years within the banking industry</p>
+      </div>
+      <div class="col-sm">
+        <%= image_tag "pietro_danielo.jpg", alt: "photo", id: "we-photo" %>
+        <h3>Pietro Danielo</h3>
+        <h4>Head Developer, 45</h4>
+        <p>Lead developer for Euro hedge fund for 10 years, Master’s degree in mathematics</p>
+      </div>
+      <div class="col-sm">
+        <%= image_tag "ailsa_waithe.jpg", alt: "photo", id: "we-photo" %>
+        <h3>Ailsa Waithe</h3>
+        <h4>Senior Researcher, 37</h4>
+        <p>Former researcher of world economics. Bachelor in Finance with honors and Master in Math</p>
+      </div>
+      <div class="col-sm">
+        <%= image_tag "jeff_keith.jpg", alt: "photo", id: "we-photo" %>
+        <h3>Jeff Keith</h3>
+        <h4>Customer Relations Manager, 40</h4>
+        <p>Over 10 years of experience working within financial call centers, degree in Economics</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+<!-- <div class="section" id="testimonials">
+  <div class="container">
+    <h2>Testimonials</h2>
+    <div class="row">
+      <div class="left"></div>
+      <div class="right"></div>
+    </div>
+  </div>
+</div> -->
+
+
+<div class="section" id="reg-form">
+  <div class="container">
+    <h2>Register Now</h2>
+    <div class="row">
+      <div class="col-xs-12 col-sm-4 col-sm-offset-4 col-md-4 offset-md-4">
+
+        <div class="form-login">
+        <%= simple_form_for @trader, url: traders_url, method: :post do |f| %>
+          <%#= f.input :name, label: false, input_html: { class: "form-control form-control-lg", placeholder: "Enter your name" } %>
+          <%#= f.input :phone, label: false, input_html: { class: "form-control form-control-lg", placeholder: "Enter your phone" } %>
+          <%= f.input :email, label: false, input_html: { class: "form-control form-control-lg", placeholder: "Enter your email" } %>
+          <%= f.submit 'Sign Up For Free Trading Signals', class: 'btn btn-danger' %>
+        <% end %>
+        </div>
+
+    </div>
+</div>
+
+</div>
+</div>

@@ -1,0 +1,183 @@
+// .banner {
+//   background-size: cover;
+//   background-position: center;
+//   padding: 300px 0;
+// }
+
+// .banner h1 {
+//   margin: 0;
+//   color: white;
+//   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+//   font-size: 32px;
+//   font-weight: bold;
+// }
+
+// .banner p {
+//   font-size: 20px;
+//   color: white;
+//   opacity: .7;
+//   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+// }
+
+
+
+
+
+
+.banner {
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  // padding: 150px 0;
+}
+
+.banner h1 {
+  margin: 0;
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  font-size: 62px;
+  font-weight: bold;
+}
+
+.banner p {
+  font-size: 30px;
+  color: white;
+  opacity: .7;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  text-decoration: underline;
+}
+
+.head-container{
+  position: relative;
+  text-align: center;
+  padding-top: 156px;
+  width: 100%;
+}
+.head-container h1 {
+  margin: 20px auto;
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  font-size: 72px;
+  font-weight: bold;
+}
+
+.banner p {
+  margin-bottom: 2em;
+}
+// MEDIA QUERIES
+// @media screen and (max-width: 992px) {
+//   .head-container h1 {
+//     margin: 0 auto;
+
+//     font-size:82px !important;
+//     font-weight: bold;
+//   }
+//   .head-container .btn{
+//     color: white;
+//     position: relative;
+//     top: 80px;
+//     width: 120px;
+//     border-radius: 4px;
+//     background: #1EDD88;
+//     transition: background 0.3s ease;
+//     height: 40px;
+//     font-size: 22px;
+//     padding: 6px;
+//   }
+// }
+// @media screen and (max-width: 600px) {
+//   .head-container h1 {
+//     margin: 0 auto;
+//     padding: 0;
+//     font-size:12px;
+//     font-weight: bold;
+//   }
+//   .head-container .btn{
+//     // color: white;
+//     position: relative;
+//     top: 80px;
+//     width: 120px;
+//     border-radius: 4px;
+//     // background: #1EDD88;
+//     transition: background 0.3s ease;
+//     height: 40px;
+//     font-size: 22px;
+//     padding: 6px;
+//   }
+// }
+// slides
+
+.slider {
+
+
+  position: relative;
+}
+.slide1,.slide2,.slide3,.slide4,.slide5 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #000000;
+  background:rgba(0, 0, 0, 1);
+}
+.slide1 {
+  background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(ishant-mishra-1349433-unsplash.jpg)no-repeat center;
+  background-size: cover;
+  animation:fade 12s infinite;
+  -webkit-animation:fade 12s infinite;
+}
+.slide2 {
+  background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(kevin-ku-364843-unsplash.jpg)no-repeat center;
+  background-size: cover;
+  animation:fade2 12s infinite;
+  -webkit-animation:fade2 12s infinite;
+}
+.slide3 {
+  background:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(blur-chart-data-159888.jpg)no-repeat center;
+  background-size: cover;
+  animation:fade3 12s infinite;
+  -webkit-animation:fade3 12s infinite;
+}
+@keyframes fade
+{
+  0%   {opacity:1}
+  33.333% { opacity: 0}
+  66.666% { opacity: 0}
+  100% { opacity: 1}
+}
+@keyframes fade2
+{
+  0%   {opacity:0}
+  33.333% { opacity: 1}
+  66.666% { opacity: 0 }
+  100% { opacity: 0}
+}
+@keyframes fade3
+{
+  0%   {opacity:0}
+  33.333% { opacity: 0}
+  66.666% { opacity: 1}
+  100% { opacity: 0}
+}
+
+@media (max-width: 415px) {
+  .head-container h1 {
+  font-size: 42px;
+  font-weight: bold;
+  }
+  .head-container p {
+  font-size: 28px;
+  }
+}
+
+@media screen and (min-device-width: 760px) and (max-device-width: 1025px) {
+  .head-container h1 {
+  font-size: 72px;
+  font-weight: bold;
+  }
+  .head-container p {
+  font-size: 32px;
+  }
+  .banner h1 {
+    margin-top: 3em;
+  }
+}

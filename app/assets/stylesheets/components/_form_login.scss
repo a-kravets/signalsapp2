@@ -1,0 +1,73 @@
+// .form-login {
+//   display: flex !important;
+//   flex-direction: column !important;
+//   justify-content: center !important;
+//   margin-top: 50px;
+//   text-align: center;
+//   h2 {
+//     font-size: 25px;
+//     font-weight: bold;
+//     margin-bottom: 30px;
+//     text-align: center;
+//   }
+//   .form-control {
+//     align-content: center;
+//     width: 400px;
+//     padding: 22px;
+//   }
+//   .btn {
+//     width: 400px;
+//     margin-bottom: 25px;
+//     color: white;
+//     font-size: 1.3em;
+//     font-weight: bolder;
+//   }
+//   .btn:hover {
+//     opacity: .8;
+//   }
+//   a {
+//     color: black;
+//     text-decoration: none;
+//   }
+//   a:hover {
+//     text-decoration: none;
+//     color: #00D1AC;
+//   }
+// }
+
+/* MEDIA QUERIES */
+.btn {
+    width: 100%;
+    margin-bottom: 25px;
+    color: white;
+    font-size: 1.3em;
+    font-weight: bolder;
+    padding: 10px;
+  }
+
+@media (max-width: 376px) {
+  .form-login {
+    max-width: 360px !important;
+  }
+  .form-control {
+    max-width: 360px !important;
+  }
+  .btn {
+    width: 100%;
+    font-size: 1em;
+  }
+}
+@media screen and (min-device-width: 760px) and (max-device-width: 1025px) {
+
+  .form-login {
+    min-width: 400px !important;
+  }
+  .form-control {
+    min-width: 400px !important;
+  }
+  .btn {
+    width: 100%;
+  }
+}
+// @media (max-width: 1400px) {
+// }
