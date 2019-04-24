@@ -120,19 +120,19 @@
   background:rgba(0, 0, 0, 1);
 }
 .slide1 {
-  background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(ishant-mishra-1349433-unsplash.jpg)no-repeat center;
+  background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), image-url('ishant-mishra-1349433-unsplash.jpg')no-repeat center;
   background-size: cover;
   animation:fade 12s infinite;
   -webkit-animation:fade 12s infinite;
 }
 .slide2 {
-  background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(kevin-ku-364843-unsplash.jpg)no-repeat center;
+  background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), image-url('kevin-ku-364843-unsplash.jpg')no-repeat center;
   background-size: cover;
   animation:fade2 12s infinite;
   -webkit-animation:fade2 12s infinite;
 }
 .slide3 {
-  background:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(blur-chart-data-159888.jpg)no-repeat center;
+  background:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), image-url('blur-chart-data-159888.jpg')no-repeat center;
   background-size: cover;
   animation:fade3 12s infinite;
   -webkit-animation:fade3 12s infinite;
